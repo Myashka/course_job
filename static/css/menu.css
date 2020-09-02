@@ -1,0 +1,32 @@
+#bt {
+  color: #1e51a4;
+  border: 1.5px solid #1e51a4;
+  border-radius: 7px;
+  padding: 10px;
+  font-family: Aqum;
+  text-align: center;
+}
+#bt:hover {
+  background-color: #1e51a4;
+  color: white;
+}
+#menumod {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -329px;
+  margin-left: -200px;
+  height: 658px;
+  width: 400px;
+  text-align: center;
+}
+#menuadm {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -405px;
+  margin-left: -200px;
+  height: 810px;
+  width: 400px;
+  text-align: center;
+}

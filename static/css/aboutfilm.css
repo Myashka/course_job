@@ -1,0 +1,93 @@
+#prokat {
+  margin-top: 0px;
+}
+.header {
+  position: relative;
+}
+#filmname {
+  color: white;
+  font-size: 150px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#film-info {
+  float: left;
+  width: 60%;
+}
+#seans-list {
+  float: right;
+  width: 40%;
+  background-color: #1e51a4;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  padding-bottom: 30px;
+  overflow-x: auto;
+}
+#film-img {
+  width: 30%;
+  float: left;
+  padding-left: 14px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+  padding-top: 14px;
+}
+#info {
+  width: 60%;
+  float: left;
+  font-size: 15px;
+}
+#durationh {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+#genreh {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+#film-block {
+  float: center;
+  color: #1e51a4;
+  background-color: white;
+  border: 1.5px solid #1e51a4;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 22.5%;
+  width: 50%;
+}
+#people {
+  width: 60%;
+  text-align: left;
+}
+#filmname {
+  text-align: center;
+  margin-bottom: 7px;
+}
+#filmc {
+  margin: 3px;
+}
+h2 {
+  margin: 0px;
+}
+h5 {
+  margin: 0;
+}
+#people-img {
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#dirs,
+#actors {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  margin-right: 1px;
+  margin-left: 4px;
+}

@@ -1,0 +1,94 @@
+#prokat {
+  margin-top: 0px;
+}
+
+.header {
+  position: relative;
+}
+#ciname {
+  color: white;
+  font-size: 150px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#cinema-info {
+  float: left;
+  width: 60%;
+}
+#film-list {
+  float: right;
+  width: 40%;
+  background-color: #1e51a4;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  padding-bottom: 30px;
+  overflow-x: auto;
+}
+#cinema-img {
+  width: 47%;
+  float: left;
+  padding-left: 14px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+  padding-top: 14px;
+}
+#info {
+  width: 35%;
+  float: left;
+  font-size: 15px;
+}
+#phoneh {
+  margin-top: 60px;
+  margin-bottom: 7px;
+}
+#adressh {
+  margin-top: 36px;
+  margin-bottom: 7px;
+}
+#film {
+  float: center;
+  color: #1e51a4;
+  background-color: white;
+  border: 1.5px solid #1e51a4;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 22.5%;
+  width: 50%;
+}
+#film:hover {
+  background-color: #1e51a4;
+  color: white;
+  border-color: white;
+}
+#seans {
+  text-align: left;
+  width: 60%;
+}
+#dataprice {
+  display: inline-block;
+  text-align: end;
+  border: 1px solid #1e51a4;
+  padding: 7px;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-bottom: 14px;
+  width: 11%;
+  font-size: 14px;
+  margin-left: 3px;
+}
+#filmname {
+  text-align: center;
+  margin-bottom: 7px;
+}
+#filmc{
+    margin: 3px;
+}
+#afish{
+  margin: 0;
+}

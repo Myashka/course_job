@@ -1,0 +1,12 @@
+form {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -200px;
+  height: 450px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 1px -1px 10px 1px #1e51a4;
+  border-radius: 7px;
+}
