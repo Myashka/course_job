@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/input.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/addses.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/inputpage.css" %}" type="text/css">
+    <title>Add Session</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <form action="" method="post">
+            <h1>Добавление сеанса</h1>
+            <h3>ID сеанса:</h3>
+            <input type="text" name="ses_id">
+            <h3>Стоимость билета:</h3>
+            <input type="text" name="cost">
+            <h3>Название кинотеатра:</h3>
+            <input type="text" name="cinemaName">
+            <h3>Название фильма:</h3>
+            <input type="text" name="films">
+            <h3>Дата и время сеанса:</h3>
+            <input type="text" name="begin_end">
+            <div><input id="buttom" type="submit" value="Добавить"></div>
+            <img id="ITMO-img" src="{% static "images/main-aut.png" %}" />
+        </form>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

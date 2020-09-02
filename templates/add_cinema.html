@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/input.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/addcinema.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/inputpage.css" %}" type="text/css">
+    <title>Add Cinema</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <form action="" method="post">
+            <h1>Добавление кинотеатра</h1>
+            <h3>ID кинотеатра:</h3>
+            <input type="text" name="id">
+            <h3>Название кинотеатра:</h3>
+            <input type="text" name="name">
+            <h3>Относительный путь к изображению:</h3>
+            <input type="text" name="image">
+            <h3>Месторасположение кинотеатра:</h3>
+            <input type="text" name="location">
+            <h3>Номер телефона:</h3>
+            <input type="text" name="phone">
+            <div id="box"><input id="buttom" type="submit" value="Добавить"></div>
+            <img id="ITMO-img" src="{% static "images/main-aut.png" %}" />
+        </form>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

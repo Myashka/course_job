@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/input.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/delmod.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/inputpage.css" %}" type="text/css">
+    <title>Delete Moderator</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <form action="" method="post">
+            <h1>Удаление модератора</h1>
+            <h3>Логин модератора:</h3>
+            <input type="text" name="login">
+            <div id="box"><input id="buttom" type="submit" value="Удалить"></div>
+            <img id="ITMO-img" src="{% static "images/main-aut.png" %}" />
+        </form>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

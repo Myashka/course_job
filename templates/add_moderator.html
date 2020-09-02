@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/input.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/addmd.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/inputpage.css" %}" type="text/css">
+    <title>Add Moderator</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <form action="" method="post">
+            <h1>Добавление модератора</h1>
+            <h3>Логин модератора:</h3>
+            <input type="text" name="login">
+            <h3>Пароль модератора:</h3>
+            <input type="text" name="password">
+            <div><input id="buttom" type="submit" value="Добавить"></div>
+            <img id="ITMO-img" src="{% static "images/main-aut.png" %}" />
+        </form>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

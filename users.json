@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "login": "superuser",
+      "password": "root",
+      "role": "superuser"
+    },
+    {
+      "login": "admin1",
+      "password": "qwerty123",
+      "role": "moderator"
+    }
+  ]
+}

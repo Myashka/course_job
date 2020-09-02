@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/page.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/base.css" %}" type="text/css">
+    <title>ITMO Cinema</title>
+</head>
+
+<body>
+    <div id="header">
+        <img id="ITMO-img" src="{% static "images/main.jpg" %}" />
+    </div>
+    <div id="content">
+        <a href="{% url 'login' %}">
+            <P id="administration">Администрирование</P>
+        </a>
+        <div id="body-home">
+            <p id="cinema-list">Кинотеатры:</p>
+            {% for i in cinemas %}
+            <a href="{% url 'aboutCinema' i.id %}">
+                <p class="cinema-block">{{i.name}}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

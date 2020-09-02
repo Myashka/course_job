@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/input.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/inputpage.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/menu.css" %}" type="text/css">
+    <title>Moderator</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <div id="menumod">
+            <h1>Меню модератора</h1>
+            <a href="{% url 'addCinema' %}">
+                <p id="bt">Добавить кинотеатр</p>
+            </a>
+            <a href="{% url 'addFilm' %}">
+                <p id="bt">Добавить фильм</p>
+            </a>
+            <a href="{% url 'addDir' %}">
+                <p id="bt">Добавить режиссера фильма</p>
+            </a>
+            <a href="{% url 'addActs' %}">
+                <p id="bt">Добавить актера фильма</p>
+            </a>
+            <a href="{% url 'addSessions' %}">
+                <p id="bt">Добавить показ</p>
+            </a>
+            <a href="{% url 'delCinema' %}">
+                <p id="bt">Удалить кинотеатр</p>
+            </a>
+            <a href="{% url 'delFilm' %}">
+                <p id="bt">Удалить фильм</p>
+            </a>
+            <a href="{% url 'delDir' %}">
+                <p id="bt">Удалить режиссера фильма</p>
+            </a>
+            <a href="{% url 'delActor' %}">
+                <p id="bt">Удалить актера фильма</p>
+            </a>
+            <a href="{% url 'delSession' %}">
+                <p id="bt">Удалить показ</p>
+            </a>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

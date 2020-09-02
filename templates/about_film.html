@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/aboutfilm.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/pages.css" %}" type="text/css">
+    <title>Film</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <div class="header">
+            <p id="filmname">{{ a.name }}</p>
+        </div>
+        <div id="film">
+            <div id="film-info">
+                <img id="film-img" src="{% static '' %}{{ a.image }}" alt='Изображение фильма' />
+                <div id="info">
+                    <div id="genre">
+                        <p>
+                            <h3 id="genreh"> Жанр:</h3> {{ a.genre }}
+                        </p>
+                    </div>
+                    <div id="duration">
+                        <p>
+                            <h3 id="durationh">Продолжительность:</h3>
+                            {{ a.duration }}
+                        </p>
+                    </div>
+                    <div id="duration">
+                        <p>
+                            <h3 id="durationh">Возрастное ограничение:</h3>
+                            {{ a.agerating }}
+                        </p>
+                    </div>
+                    <div id="duration">
+                        <p>
+                            <h3 id="durationh">Краткое описание:</h3>
+                            <h5>{{ a.description }}</h5>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="seans-list">
+                <h1 id="prokat">Ближайшие сеансы:</h1>
+                {% for i in a.sessions %}
+                <div id="film-block">
+                    <p>{{ i.begin_end }}</p>
+                    <p>Цена билета:</br>{{ i.cost }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="people">
+                <h2>Режиссер(ы):</h2> {% for i in a.director %}
+                <div id="dirs"> <img id="people-img" src="{% static '' %}{{ i.image }}" alt='Изображение режиссера' />
+                    <p>{{ i.full_name }}</p>
+                </div>
+                {% endfor %}
+                <h2>Актеры:</h2> {% for i in a.actors %}
+                <div id="actors"> <img id="people-img" src="{% static '' %}{{ i.image }}" alt='Изображение актёра' />
+                    <p>{{i.full_name }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>

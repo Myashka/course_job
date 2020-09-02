@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static  "css/aboutcinema.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static  "css/pages.css" %}" type="text/css">
+    <title>Cinema</title>
+</head>
+
+<body>
+    <div id="content">
+        <a href="{% url 'home' %}">
+            <p id="home">Главная</p>
+        </a>
+        <div class="header">
+            <p id="ciname">{{ a.name }}</p>
+        </div>
+        <div id="cinema">
+            <div id="cinema-info">
+                <img id="cinema-img" src="{% static '' %}{{ a.image }}" alt='Изображение кинотеатра' />
+                <div id="info">
+                    <div id="adress">
+                        <p>
+                            <h3 id="adressh">Адрес:</h3>{{ a.location }}
+                        </p>
+                    </div>
+                    <div id="phone">
+                        <p>
+                            <h3 id="phoneh">Контактный телефон:</h3>
+                            {{ a.phone }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="film-list">
+                <h1 id="prokat">Фильмы в прокате:</h1>
+                {% for i in a.films %}
+                <a href="{% url 'aboutFilm' i.id %}">
+                    <p id="film">{{ i.name }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="seans">
+            <h1 id="afish">Афиша кинотеатра</h1>
+            {% for i in a.films %}
+            <h4 id="filmc">{{ i.name }}:</h4>
+            {% for j in i.sessions %}
+            <div id="dataprice">
+                <p>{{ j.begin_end }}</p>
+                <p>Цена билета:</br>{{ j.cost }}</p>
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>
